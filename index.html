@@ -1,676 +1,616 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="light">
+<html lang="es" data-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Portafolio profesional de Peter Avilés, Ingeniero en Sistemas especializado en desarrollo web y bases de datos">
-    <meta name="keywords" content="desarrollador web, ingeniero sistemas, Java, Python, bases de datos, portafolio">
-    <meta name="author" content="Peter Avilés">
-    <title>Peter Avilés | Ingeniero en Sistemas & Desarrollador Web</title>
+        content="Portafolio profesional de Peter Avilés, desarrollador web especializado en backend, APIs, bases de datos y soluciones tecnológicas para empresas." />
+    <meta name="keywords"
+        content="Peter Avilés, desarrollador web, backend, APIs REST, bases de datos, Ecuador, portafolio, programador" />
+    <meta name="author" content="Peter Avilés" />
 
-    <!-- Preconexiones y preloads para mejor performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Peter Avilés | Desarrollador Web & Backend</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="portafolio.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png"
-        href="https://lh3.googleusercontent.com/a/ACg8ocKMEbzZGM2mcJCfl6iMyR-7AUszcnNuJgxaYyRM8Px3qMqx4_umDnF911Ngv8zs7yY4CyVjsDd2eO6dX6Am4WPSnryM=s288-c-no">
+    <link rel="stylesheet" href="portafolio.css" />
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="https://lh3.googleusercontent.com/a/ACg8ocKMEbzZGM2mcJCfl6iMyR-7AUszcnNuJgxaYyRM8Px3qMqx4_umDnF911Ngv8zs7yY4CyVjsDd2eO6dX6Am4WPSnryM=s288-c-no"
-                    alt="Logo Peter Avilés" class="rounded-circle me-3" width="60" height="60">
-                <span class="d-none d-lg-block">Peter Avilés</span>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <span class="logo-icon">P</span>
+                <span>Peter Avilés</span>
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Educación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experiencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Proyectos</a>
-                    </li>
-                    <li class="nav-item ms-lg-3">
-                        <a href="mailto:avilespiter35@gmail.com" class="btn btn-outline-light">
-                            <i class="fas fa-envelope me-2"></i>Contacto
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-section bg-primary text-white py-5">
-        <div class="container py-5 my-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">Peter Avilés Alarcón</h1>
-                    <h2 class="h3 mb-4">Ingeniero en Sistemas & Desarrollador Web</h2>
-                    <p class="lead mb-4">Especializado en desarrollo backend, bases de datos y soluciones tecnológicas
-                        innovadoras.</p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="https://www.linkedin.com/in/peter-aviles-alarcon-9053a5252/"
-                            class="btn btn-light btn-lg" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin me-2"></i>LinkedIn
-                        </a>
-                        <a href="https://github.com/Peteravi" class="btn btn-outline-light btn-lg" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="fab fa-github me-2"></i>GitHub
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-none d-lg-block">
-                    <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-                        alt="Desarrollo web" class="img-fluid rounded shadow">
-                </div>
-            </div>
-        </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Sobre mí -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title mb-5">Sobre <span class="text-primary">mí</span></h2>
+    <main>
 
-                    <div class="about-content bg-white p-4 p-lg-5 shadow-sm rounded">
-                        <p class="lead">Como <strong>ingeniero en sistemas</strong> altamente calificado, ofrezco una
-                            sólida experiencia en el diseño, desarrollo e implementación de sistemas informáticos
-                            eficientes y robustos.</p>
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="hero-bg"></div>
 
-                        <p>Mis habilidades abarcan un profundo conocimiento en <strong>bases de datos</strong>,
-                            asegurando la integridad, seguridad y rendimiento de la información almacenada. Mi destreza
-                            en la manipulación de datos se traduce en la capacidad para diseñar esquemas efectivos y
-                            optimizar consultas, contribuyendo así a la eficiencia operativa de los proyectos.</p>
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <span class="badge">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Disponible para proyectos freelance y oportunidades laborales
+                    </span>
 
-                        <p>Mi dominio en los lenguajes de programación <strong>Java</strong> y <strong>Python</strong>
-                            me permite crear soluciones tecnológicas completas y versátiles. Con experiencia en el
-                            desarrollo tanto de aplicaciones backend como en la implementación de proyectos de análisis
-                            de datos, estoy preparado para abordar desafíos complejos y generar soluciones innovadoras.
+                    <h1>
+                        Desarrollo soluciones web modernas para
+                        <span>negocios, empresas y emprendedores.</span>
+                    </h1>
+
+                    <p>
+                        Soy Peter Avilés, desarrollador enfocado en backend, APIs REST,
+                        bases de datos, sistemas administrativos y plataformas web orientadas
+                        a resultados reales.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#proyectos" class="btn btn-primary">
+                            Ver proyectos
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="mailto:avilespiter35@gmail.com" class="btn btn-secondary">
+                            Contactarme
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div>
+                            <strong>+4</strong>
+                            <span>Áreas técnicas</span>
+                        </div>
+                        <div>
+                            <strong>Web</strong>
+                            <span>Backend & Frontend</span>
+                        </div>
+                        <div>
+                            <strong>EC</strong>
+                            <span>Guayaquil, Ecuador</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-card reveal">
+                    <div class="profile-card">
+                        <div class="profile-top">
+                            <img src="https://scontent.fgye1-2.fna.fbcdn.net/v/t39.30808-6/649276017_2799733670359045_6946840891163266755_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Iqs8e35vxMEQ7kNvwHyqM0Z&_nc_oc=Adr846NgAR1cTEdDtoL6xrj9w_09SlL7ibu42OF_4TDQ5htCzAnTCSIjjJ6kSghs24o&_nc_zt=23&_nc_ht=scontent.fgye1-2.fna&_nc_gid=KLp-e872GMbJ9ZeEFdVxHg&_nc_ss=7b2a8&oh=00_Af0ZJzXZ0cR401FE7aFsnnRlQfLPravdaz6vX2ASvBT1dw&oe=69F57A44"
+                                alt="Foto de Peter Avilés" />
+                            <div>
+                                <h3>Peter Avilés</h3>
+                                <p>Desarrollador Web & Backend</p>
+                            </div>
+                        </div>
+
+                        <div class="profile-stack">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>MySQL</span>
+                            <span>Docker</span>
+                            <span>APIs REST</span>
+                        </div>
+
+                        <div class="profile-links">
+                            <a href="https://github.com/Peteravi" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/peter-aviles-alarcon-9053a5252/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MI -->
+        <section class="section" id="sobre-mi">
+            <div class="container about-grid">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">Sobre mí</span>
+                    <h2>Perfil profesional orientado a resultados</h2>
+                </div>
+
+                <div class="about-content reveal">
+                    <p>
+                        Soy desarrollador con enfoque en crear soluciones tecnológicas útiles,
+                        funcionales y escalables. Me especializo en construir sistemas web,
+                        APIs, bases de datos y módulos administrativos para negocios que
+                        necesitan digitalizar procesos, vender mejor o gestionar información
+                        de forma más eficiente.
+                    </p>
+
+                    <p>
+                        Mi objetivo es entregar software claro, mantenible y preparado para
+                        crecer. Trabajo con tecnologías como Python, JavaScript, Node.js,
+                        HTML, CSS, MySQL, PostgreSQL y herramientas de despliegue como Linux,
+                        Docker y VPS.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section class="section soft" id="servicios">
+            <div class="container">
+                <div class="section-heading center reveal">
+                    <span class="eyebrow">Servicios</span>
+                    <h2>Soluciones que puedo desarrollar</h2>
+                    <p>Ideal para clientes, emprendimientos, empresas pequeñas y reclutadores que buscan un perfil
+                        técnico práctico.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card reveal">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Desarrollo Web</h3>
+                        <p>Páginas modernas, responsivas y profesionales para promocionar servicios o negocios.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Backend & APIs</h3>
+                        <p>APIs REST, lógica de negocio, validaciones, autenticación y conexión con bases de datos.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Bases de Datos</h3>
+                        <p>Diseño de tablas, consultas SQL, reportes, normalización y optimización de información.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h3>Despliegue Web</h3>
+                        <p>Publicación de sistemas en VPS, configuración básica de dominios, Linux, Docker y servidores.
                         </p>
-                    </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Habilidades -->
-    <section id="skills" class="py-5">
-        <div class="container py-5">
-            <h2 class="section-title text-center mb-5">Mis <span class="text-primary">Habilidades</span></h2>
-
-            <div class="row">
-                <!-- Lenguajes de Programación -->
-                <div class="col-md-6 mb-5">
-                    <div class="skill-category card h-100 border-0 shadow-sm">
-                        <div class="card-body">
-                            <h3 class="h4 card-title mb-4">
-                                <i class="fas fa-code text-primary me-2"></i>Lenguajes de Programación
-                            </h3>
-                            <div class="row g-4">
-                                <div class="col-6 col-md-4 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-                                            alt="Java" class="img-fluid mb-3" width="60" height="60">
-                                        <p class="mb-0 fw-bold">Java</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-                                            alt="Python" class="img-fluid mb-3" width="60" height="60">
-                                        <p class="mb-0 fw-bold">Python</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
-                                            alt="C#" class="img-fluid mb-3" width="60" height="60">
-                                        <p class="mb-0 fw-bold">C#</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- HABILIDADES -->
+        <section class="section" id="habilidades">
+            <div class="container">
+                <div class="section-heading center reveal">
+                    <span class="eyebrow">Stack técnico</span>
+                    <h2>Tecnologías y herramientas</h2>
                 </div>
 
-                <!-- Desarrollo Web -->
-                <div class="col-md-6 mb-5">
-                    <div class="skill-category card h-100 border-0 shadow-sm">
-                        <div class="card-body">
-                            <h3 class="h4 card-title mb-4">
-                                <i class="fas fa-globe text-primary me-2"></i>Desarrollo Web
-                            </h3>
-                            <div class="row g-4">
-                                <div class="col-6 col-md-3 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-                                            alt="HTML5" class="img-fluid mb-3" width="60" height="60">
-                                        <p class="mb-0 fw-bold">HTML5</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-3 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                                            alt="CSS3" class="img-fluid mb-3" width="60" height="60">
-                                        <p class="mb-0 fw-bold">CSS3</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-3 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-                                            alt="Bootstrap" class="img-fluid mb-3" width="60" height="60">
-                                        <p class="mb-0 fw-bold">Bootstrap</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-3 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                                            alt="JavaScript" class="img-fluid mb-3" width="60" height="60">
-                                        <p class="mb-0 fw-bold">JavaScript</p>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="skills-grid">
+                    <div class="skill-card reveal">
+                        <h3><i class="fa-solid fa-laptop-code"></i> Lenguajes</h3>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>C#</span>
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
                         </div>
                     </div>
-                </div>
 
-
-                <!-- Frameworks y Plataformas -->
-                <div class="col-md-6 mb-5 mb-md-0">
-                    <div class="skill-category card h-100 border-0 shadow-sm">
-                        <div class="card-body">
-                            <h3 class="h4 card-title mb-4">
-                                <i class="fas fa-layer-group text-primary me-2"></i>Frameworks & Plataformas
-                            </h3>
-                            <div class="row g-4">
-                                <div class="col-6 col-md-4 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg"
-                                            alt=".NET" class="img-fluid mb-3" width="60" height="60">
-                                        <p class="mb-0 fw-bold">.NET</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg"
-                                            alt=".NET Core" class="img-fluid mb-3" width="60" height="60">
-                                        <p class="mb-0 fw-bold">.NET Core</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <i class="fas fa-cloud fa-3x mb-3 text-primary"></i>
-                                        <p class="mb-0 fw-bold">API REST</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="skill-card reveal">
+                        <h3><i class="fa-solid fa-layer-group"></i> Frameworks</h3>
+                        <div class="tags">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Flask</span>
+                            <span>Django</span>
+                            <span>Bootstrap</span>
+                            <span>.NET</span>
                         </div>
                     </div>
-                </div>
 
-                <!-- Bases de Datos -->
-                <div class="col-md-6">
-                    <div class="skill-category card h-100 border-0 shadow-sm">
-                        <div class="card-body">
-                            <h3 class="h4 card-title mb-4">
-                                <i class="fas fa-database text-primary me-2"></i>Bases de Datos
-                            </h3>
-                            <div class="row g-4">
-                                <div class="col-6 col-md-3 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg"
-                                            alt="Oracle" class="img-fluid mb-3" width="60" height="60">
-                                        <p class="mb-0 fw-bold">Oracle</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-3 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                                            alt="MySQL" class="img-fluid mb-3" width="60" height="60">
-                                        <p class="mb-0 fw-bold">MySQL</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-3 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
-                                            alt="PostgreSQL" class="img-fluid mb-3" width="60" height="60">
-                                        <p class="mb-0 fw-bold">PostgreSQL</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-3 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"
-                                            alt="SQL Server" class="img-fluid mb-3" width="60" height="60">
-                                        <p class="mb-0 fw-bold">SQL Server</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="skill-card reveal">
+                        <h3><i class="fa-solid fa-database"></i> Bases de datos</h3>
+                        <div class="tags">
+                            <span>MySQL</span>
+                            <span>PostgreSQL</span>
+                            <span>SQLite</span>
+                            <span>MongoDB</span>
+                            <span>SQL Server</span>
                         </div>
                     </div>
-                </div>
 
-
-                <!-- Otras Habilidades -->
-                <div class="col-md-6">
-                    <div class="skill-category card h-100 border-0 shadow-sm">
-                        <div class="card-body">
-                            <h3 class="h4 card-title mb-4">
-                                <i class="fas fa-tools text-primary me-2"></i>Otras Habilidades
-                            </h3>
-                            <div class="row g-4">
-                                <div class="col-6 col-md-4 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <i class="fas fa-server fa-3x mb-3 text-primary"></i>
-                                        <p class="mb-0 fw-bold">Backend</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
-                                        <p class="mb-0 fw-bold">Análisis de Datos</p>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-4 text-center">
-                                    <div class="skill-item p-3 rounded">
-                                        <i class="fas fa-laptop-code fa-3x mb-3 text-primary"></i>
-                                        <p class="mb-0 fw-bold">Soporte Técnico</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="skill-card reveal">
+                        <h3><i class="fa-solid fa-screwdriver-wrench"></i> Herramientas</h3>
+                        <div class="tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Docker</span>
+                            <span>Linux</span>
+                            <span>VPS</span>
+                            <span>VS Code</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Educación -->
-    <section id="education" class="py-5 bg-light">
-        <div class="container py-5">
-            <h2 class="section-title text-center mb-5">Formación <span class="text-primary">Académica</span></h2>
+        <!-- PROYECTOS -->
+        <section class="section soft" id="proyectos">
+            <div class="container">
+                <div class="section-heading center reveal">
+                    <span class="eyebrow">Portafolio</span>
+                    <h2>Proyectos destacados</h2>
+                    <p>Cada proyecto incluye carrusel de imágenes relacionadas con su área: ticketing, consultoría,
+                        inventario y análisis de datos.</p>
+                </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="education-item card border-0 shadow-sm mb-4">
-                        <div class="row g-0">
-                            <div
-                                class="col-md-4 d-flex align-items-center justify-content-center p-4 bg-primary text-white">
-                                <img src="https://universidadesgratuitas.com/wp-content/uploads/2020/12/UG-Guayaquil.png"
-                                    alt="Universidad de Guayaquil" class="img-fluid">
+                <div class="filter-buttons reveal">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="desktop">Escritorio</button>
+                    <button class="filter-btn" data-filter="data">Datos</button>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- PROYECTO 1 -->
+                    <article class="project-card reveal" data-category="web backend">
+                        <div class="project-carousel" data-carousel>
+                            <div class="carousel-track">
+                                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Venta de tickets online">
+                                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Evento y control de entradas">
+                                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Pagos digitales y gestión online">
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h3 class="h4 card-title">Universidad de Guayaquil</h3>
-                                    <p class="card-subtitle mb-3 text-muted">Ingeniería en Sistemas de Información</p>
-                                    <p class="card-text">La Universidad de Guayaquil es reconocida por su enfoque en la
-                                        formación de profesionales en el área de tecnología y sistemas, ofreciendo un
-                                        plan de estudios actualizado que incluye prácticas profesionales y proyectos en
-                                        equipo.</p>
 
-                                    <div class="mt-4">
-                                        <h4 class="h5">Cursos Relevantes:</h4>
-                                        <ul class="list-unstyled">
-                                            <li><i class="fas fa-check-circle text-primary me-2"></i> Programación en
-                                                Python</li>
-                                            <li><i class="fas fa-check-circle text-primary me-2"></i> Desarrollo Web con
-                                                HTML/CSS</li>
-                                            <li><i class="fas fa-check-circle text-primary me-2"></i> Gestión de
-                                                Contenidos con WordPress</li>
-                                            <li><i class="fas fa-check-circle text-primary me-2"></i> Bases de Datos
-                                                Relacionales</li>
-                                            <li><i class="fas fa-check-circle text-primary me-2"></i> Análisis y Diseño
-                                                de Sistemas</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <button class="carousel-btn prev" type="button">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next" type="button">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Sistema de Ticketing QR</h3>
+                                <span class="project-type">Web App</span>
                             </div>
+
+                            <p>
+                                Plataforma para gestión de eventos, entradas, pagos y validación mediante códigos QR.
+                                Pensada para vender tickets y administrar órdenes desde un panel web.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MySQL</span>
+                                <span>QR</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/Peteravi" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    Código
+                                </a>
+
+                                <a href="https://pagqr-production.up.railway.app/" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Demo
+                                </a>
+
+                                <a href="#contacto">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    Consultar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROYECTO 2 -->
+                    <article class="project-card project-card-gfc reveal" data-category="web">
+                        <div class="project-carousel" data-carousel>
+                            <div class="carousel-track">
+                                <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Consultoría corporativa internacional">
+                                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Reunión empresarial y estrategia">
+                                <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Equipo de negocios y análisis financiero">
+                            </div>
+
+                            <button class="carousel-btn prev" type="button">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next" type="button">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Global Finance Consulting GmbH</h3>
+                                <span class="project-type">Corporate Website</span>
+                            </div>
+
+                            <p>
+                                Página web corporativa bilingüe para una consultora internacional enfocada en
+                                expansión de mercado, asesoría regulatoria, supply chain y análisis geopolítico.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Responsive</span>
+                                <span>Corporate</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://gfc-at.com/en/" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Demo
+                                </a>
+
+                                <a href="#contacto">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    Consultar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROYECTO 3 -->
+                    <article class="project-card reveal" data-category="desktop backend">
+                        <div class="project-carousel" data-carousel>
+                            <div class="carousel-track">
+                                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Gestión de inventario y almacén">
+                                <img src="https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Control de productos en negocio">
+                                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Logística y organización de stock">
+                            </div>
+
+                            <button class="carousel-btn prev" type="button">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next" type="button">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Sistema de Inventario</h3>
+                                <span class="project-type">Desktop App</span>
+                            </div>
+
+                            <p>
+                                Aplicación para controlar productos, ventas, stock y reportes básicos.
+                                Orientada a pequeños negocios que necesitan ordenar sus procesos internos.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>C#</span>
+                                <span>.NET</span>
+                                <span>MySQL</span>
+                                <span>Reportes</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/Peteravi" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    Código
+                                </a>
+
+                                <a href="#contacto">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    Consultar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROYECTO 4 -->
+                    <article class="project-card reveal" data-category="data backend">
+                        <div class="project-carousel" data-carousel>
+                            <div class="carousel-track">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Dashboard de análisis de ventas">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Análisis de datos empresariales">
+                                <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=1200&q=80"
+                                    alt="Gráficos y métricas de negocio">
+                            </div>
+
+                            <button class="carousel-btn prev" type="button">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next" type="button">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Predicción de Ventas</h3>
+                                <span class="project-type">Data App</span>
+                            </div>
+
+                            <p>
+                                Proyecto de análisis y predicción de ventas usando Python,
+                                procesamiento de datos y visualización para apoyar decisiones comerciales.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>Scikit-learn</span>
+                                <span>Charts</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com/Peteravi" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    Código
+                                </a>
+
+                                <a href="#contacto">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    Consultar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section class="section" id="experiencia">
+            <div class="container">
+                <div class="section-heading center reveal">
+                    <span class="eyebrow">Experiencia</span>
+                    <h2>Trayectoria y formación</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <h3>Soporte Técnico</h3>
+                            <h4>Consejo Nacional Electoral - CNE</h4>
+                            <p>
+                                Mantenimiento de equipos, configuración de software, soporte a usuarios,
+                                revisión de hardware, redes básicas y gestión de incidencias técnicas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <h3>Ingeniería en Sistemas de Información</h3>
+                            <h4>Universidad de Guayaquil</h4>
+                            <p>
+                                Formación enfocada en programación, bases de datos, análisis de sistemas,
+                                arquitectura de software y desarrollo de soluciones tecnológicas.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experiencia Laboral -->
-    <section id="experience" class="py-5">
-        <div class="container py-5">
-            <h2 class="section-title text-center mb-5">Experiencia <span class="text-primary">Laboral</span></h2>
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container cta-box reveal">
+                <div>
+                    <span class="eyebrow">Trabajemos juntos</span>
+                    <h2>¿Necesitas una web, sistema o solución digital?</h2>
+                    <p>
+                        Puedo ayudarte a crear una solución profesional para tu negocio, emprendimiento o proyecto.
+                    </p>
+                </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="timeline">
-                        <!-- Experiencia 1 -->
-                        <div class="timeline-item">
-                            <div class="timeline-img">
-                                <img src="https://lh5.googleusercontent.com/-8J1iM_S9ZlE/TXZPh9d3m7I/AAAAAAAAEeg/MEkvIhe6APo/s320/CNE+-+Ecuador.jpg"
-                                    alt="CNE" class="rounded-circle">
-                            </div>
-                            <div class="timeline-content card shadow-sm">
-                                <div class="card-body">
-                                    <h3 class="h4 card-title">Soporte Técnico</h3>
-                                    <h4 class="h5 card-subtitle mb-3 text-primary">Consejo Nacional Electoral (CNE)</h4>
-                                    <div class="d-flex flex-wrap gap-3 mb-3">
-                                        <span class="badge bg-light text-dark">
-                                            <i class="fas fa-calendar-alt me-2"></i>6 meses
-                                        </span>
-                                        <span class="badge bg-light text-dark">
-                                            <i class="fas fa-phone me-2"></i>Ref: 0985302043
-                                        </span>
-                                    </div>
+                <a href="mailto:avilespiter35@gmail.com" class="btn btn-primary">
+                    Escribirme ahora
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </section>
 
-                                    <p class="card-text">La experiencia laboral abarca una amplia gama de roles técnicos
-                                        en el ámbito informático:</p>
+        <!-- CONTACTO -->
+        <section class="section soft" id="contacto">
+            <div class="container">
+                <div class="section-heading center reveal">
+                    <span class="eyebrow">Contacto</span>
+                    <h2>Hablemos de tu proyecto</h2>
+                </div>
 
-                                    <ul class="list-unstyled">
-                                        <li><i class="fas fa-check-circle text-primary me-2"></i> Mantenimiento
-                                            preventivo y correctivo de equipos</li>
-                                        <li><i class="fas fa-check-circle text-primary me-2"></i> Diagnóstico y
-                                            reparación de hardware</li>
-                                        <li><i class="fas fa-check-circle text-primary me-2"></i> Configuración de
-                                            direcciones IP en dispositivos inalámbricos</li>
-                                        <li><i class="fas fa-check-circle text-primary me-2"></i> Instalación y
-                                            configuración de software</li>
-                                        <li><i class="fas fa-check-circle text-primary me-2"></i> Soporte técnico a
-                                            usuarios de forma remota y presencial</li>
-                                        <li><i class="fas fa-check-circle text-primary me-2"></i> Gestión y
-                                            actualización de inventario de equipos</li>
-                                        <li><i class="fas fa-check-circle text-primary me-2"></i> Personalización de
-                                            configuraciones de PC según necesidades específicas</li>
-                                    </ul>
+                <div class="contact-grid">
+                    <a class="contact-card reveal" href="mailto:avilespiter35@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Correo</h3>
+                        <p>avilespiter35@gmail.com</p>
+                    </a>
 
-                                    <div class="mt-3">
-                                        <strong>Supervisor del Área de Tecnología:</strong> Jorge Rodríguez
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <a class="contact-card reveal" href="tel:+593963892976">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Teléfono</h3>
+                        <p>+593 963 892 976</p>
+                    </a>
 
-                        <!-- Puedes agregar más experiencias aquí -->
-                    </div>
+                    <a class="contact-card reveal" href="https://github.com/Peteravi" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>Ver repositorios</p>
+                    </a>
+
+                    <a class="contact-card reveal" href="https://www.linkedin.com/in/peter-aviles-alarcon-9053a5252/"
+                        target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Conectar profesionalmente</p>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Proyectos -->
-    <section id="projects" class="py-5 bg-light">
-        <div class="container py-5">
-            <h2 class="section-title text-center mb-5">Mis <span class="text-primary">Proyectos</span></h2>
+    </main>
 
-            <div class="row g-4">
-                <!-- Proyecto 1 -->
-                <div class="col-lg-6">
-                    <div class="project-card card h-100 border-0 shadow-sm overflow-hidden">
-                        <div class="row g-0">
-                            <div class="col-md-5">
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-                                    class="img-fluid h-100 object-fit-cover" alt="Sistema de Gestión para Teletrabajo">
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body d-flex flex-column h-100">
-                                    <div>
-                                        <h3 class="h4 card-title">Sistema de Gestión para Teletrabajo</h3>
-                                        <div class="d-flex flex-wrap gap-2 mb-3">
-                                            <span class="badge bg-primary">Flask</span>
-                                            <span class="badge bg-primary">Python</span>
-                                            <span class="badge bg-primary">HTML/CSS</span>
-                                            <span class="badge bg-primary">JavaScript</span>
-                                        </div>
-                                        <p class="card-text">Plataforma web desarrollada con Flask que permite la
-                                            gestión de tareas, horarios y reportes para equipos remotos, facilitando la
-                                            coordinación y el seguimiento del trabajo a distancia.</p>
-                                    </div>
-                                    <div class="mt-auto">
-                                        <a href="https://github.com/Peteravi/SISTEMA-DE-GESTION-DE-TELETRABAJO.git"
-                                            class="btn btn-outline-primary btn-sm stretched-link" target="_blank"
-                                            rel="noopener noreferrer">
-                                            <i class="fab fa-github me-2"></i>Ver en GitHub
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© <span id="currentYear"></span> Peter Avilés. Todos los derechos reservados.</p>
 
-                <!-- Proyecto 2 -->
-                <div class="col-lg-6">
-                    <div class="project-card card h-100 border-0 shadow-sm overflow-hidden">
-                        <div class="row g-0">
-                            <div class="col-md-5">
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-                                    class="img-fluid h-100 object-fit-cover" alt="Sistema de Gestión de Inventarios">
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body d-flex flex-column h-100">
-                                    <div>
-                                        <h3 class="h4 card-title">Sistema de Gestión de Inventarios</h3>
-                                        <div class="d-flex flex-wrap gap-2 mb-3">
-                                            <span class="badge bg-primary">C#</span>
-                                            <span class="badge bg-primary">.NET</span>
-                                            <span class="badge bg-primary">MySQL</span>
-                                        </div>
-                                        <p class="card-text">Aplicación de escritorio desarrollada en C# con conexión a
-                                            MySQL, diseñada para gestionar inventarios, ventas y reportes financieros de
-                                            pequeñas empresas, optimizando sus procesos operativos.</p>
-                                    </div>
-                                    <div class="mt-auto">
-                                        <a href="https://github.com/Peteravi/SistemaGestionInventario.git"
-                                            class="btn btn-outline-primary btn-sm stretched-link" target="_blank"
-                                            rel="noopener noreferrer">
-                                            <i class="fab fa-github me-2"></i>Ver en GitHub
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 3 -->
-                <div class="col-lg-6">
-                    <div class="project-card card h-100 border-0 shadow-sm overflow-hidden">
-                        <div class="row g-0">
-                            <div class="col-md-5">
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-                                    class="img-fluid h-100 object-fit-cover" alt="Sistema Meteorológico">
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body d-flex flex-column h-100">
-                                    <div>
-                                        <h3 class="h4 card-title">Sistema Meteorológico</h3>
-                                        <div class="d-flex flex-wrap gap-2 mb-3">
-                                            <span class="badge bg-primary">Java</span>
-                                            <span class="badge bg-primary">API REST</span>
-                                            <span class="badge bg-primary">Swing</span>
-                                        </div>
-                                        <p class="card-text">Aplicación de escritorio desarrollada en Java que permite
-                                            consultar condiciones climáticas en tiempo real mediante APIs meteorológicas
-                                            y visualizar pronósticos con una interfaz intuitiva.</p>
-                                    </div>
-                                    <div class="mt-auto">
-                                        <a href="https://github.com/Peteravi/SistemaMeteorologico.git"
-                                            class="btn btn-outline-primary btn-sm stretched-link" target="_blank"
-                                            rel="noopener noreferrer">
-                                            <i class="fab fa-github me-2"></i>Ver en GitHub
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 4 -->
-                <div class="col-lg-6">
-                    <div class="project-card card h-100 border-0 shadow-sm overflow-hidden">
-                        <div class="row g-0">
-                            <div class="col-md-5">
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-                                    class="img-fluid h-100 object-fit-cover" alt="Predicción de Ventas">
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body d-flex flex-column h-100">
-                                    <div>
-                                        <h3 class="h4 card-title">Predicción de Ventas</h3>
-                                        <div class="d-flex flex-wrap gap-2 mb-3">
-                                            <span class="badge bg-primary">Python</span>
-                                            <span class="badge bg-primary">Pandas</span>
-                                            <span class="badge bg-primary">Scikit-learn</span>
-                                            <span class="badge bg-primary">Matplotlib</span>
-                                        </div>
-                                        <p class="card-text">Aplicación que predice ventas mensuales en diferentes
-                                            ciudades del Ecuador utilizando modelos de machine learning, integrando un
-                                            dashboard interactivo para visualización de resultados.</p>
-                                    </div>
-                                    <div class="mt-auto">
-                                        <a href="https://github.com/Peteravi/prediccion-ventas"
-                                            class="btn btn-outline-primary btn-sm stretched-link" target="_blank"
-                                            rel="noopener noreferrer">
-                                            <i class="fab fa-github me-2"></i>Ver en GitHub
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contact" class="py-5">
-        <div class="container py-5">
-            <h2 class="section-title text-center mb-5">Contacto</h2>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-4 p-lg-5">
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <div class="contact-info text-center p-4 h-100 rounded bg-light">
-                                        <div class="icon mb-4">
-                                            <i class="fas fa-envelope fa-3x text-primary"></i>
-                                        </div>
-                                        <h3 class="h4">Correo Electrónico</h3>
-                                        <p class="mb-0">
-                                            <a href="mailto:avilespiter35@gmail.com"
-                                                class="text-decoration-none">avilespiter35@gmail.com</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="contact-info text-center p-4 h-100 rounded bg-light">
-                                        <div class="icon mb-4">
-                                            <i class="fas fa-phone-alt fa-3x text-primary"></i>
-                                        </div>
-                                        <h3 class="h4">Teléfono</h3>
-                                        <p class="mb-0">
-                                            <a href="tel:+593 963892976" class="text-decoration-none">+593 963892976</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-5">
-                                <h3 class="h4 text-center mb-4">Conectemos en redes</h3>
-                                <div class="d-flex justify-content-center gap-3">
-                                    <a href="https://www.linkedin.com/in/peter-aviles-alarcon-9053a5252/"
-                                        class="social-icon btn btn-outline-primary rounded-circle" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="https://github.com/Peteravi"
-                                        class="social-icon btn btn-outline-primary rounded-circle" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="mailto:avilespiter35@gmail.com"
-                                        class="social-icon btn btn-outline-primary rounded-circle">
-                                        <i class="fas fa-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <img src="https://lh3.googleusercontent.com/a/ACg8ocKMEbzZGM2mcJCfl6iMyR-7AUszcnNuJgxaYyRM8Px3qMqx4_umDnF911Ngv8zs7yY4CyVjsDd2eO6dX6Am4WPSnryM=s288-c-no"
-                        alt="Logo Peter Avilés" class="rounded-circle me-3" width="50" height="50">
-                    <span class="d-inline-block align-middle">Peter Avilés Alarcón</span>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">&copy; <span id="current-year">2024</span> Todos los derechos reservados</p>
-                </div>
+            <div class="footer-social">
+                <a href="https://github.com/Peteravi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/peter-aviles-alarcon-9053a5252/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:avilespiter35@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS y dependencias -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <i class="fa-solid fa-moon"></i>
+    </button>
 
-    <!-- Enlace al archivo JavaScript -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <script src="script.js"></script>
 </body>
 
