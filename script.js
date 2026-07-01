@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const themeToggle = document.getElementById("themeToggle");
     const backToTop = document.getElementById("backToTop");
     const currentYear = document.getElementById("currentYear");
+    const header = document.querySelector(".header");
 
     if (currentYear) {
         currentYear.textContent = new Date().getFullYear();
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             navMenu.classList.toggle("active");
 
             const icon = menuBtn.querySelector("i");
+
             if (icon) {
                 icon.classList.toggle("fa-bars");
                 icon.classList.toggle("fa-xmark");
@@ -26,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 navMenu.classList.remove("active");
 
                 const icon = menuBtn.querySelector("i");
+
                 if (icon) {
                     icon.classList.add("fa-bars");
                     icon.classList.remove("fa-xmark");
@@ -70,14 +73,22 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Botón volver arriba
+    // Botón volver arriba y sombra del navbar
     window.addEventListener("scroll", () => {
-        if (!backToTop) return;
+        if (backToTop) {
+            if (window.scrollY > 450) {
+                backToTop.classList.add("show");
+            } else {
+                backToTop.classList.remove("show");
+            }
+        }
 
-        if (window.scrollY > 450) {
-            backToTop.classList.add("show");
-        } else {
-            backToTop.classList.remove("show");
+        if (header) {
+            if (window.scrollY > 20) {
+                header.style.boxShadow = "0 18px 50px rgba(0,0,0,0.18)";
+            } else {
+                header.style.boxShadow = "none";
+            }
         }
     });
 
@@ -175,18 +186,5 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
         });
-    });
-
-    // Navbar con efecto al bajar
-    const header = document.querySelector(".header");
-
-    window.addEventListener("scroll", () => {
-        if (!header) return;
-
-        if (window.scrollY > 20) {
-            header.style.boxShadow = "0 18px 50px rgba(0,0,0,0.18)";
-        } else {
-            header.style.boxShadow = "none";
-        }
     });
 });
