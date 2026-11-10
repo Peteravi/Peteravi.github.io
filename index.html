@@ -2,6 +2,12 @@
 <html lang="es" data-theme="dark">
 
 <head>
+    <meta name="color-scheme" content="dark light" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_EC" />
+    <meta property="og:title" content="Peter Avilés | Páginas web y sistemas para tu negocio" />
+    <meta property="og:description" content="Conoce mis servicios y proyectos. Páginas web, control de ventas e inventarios y herramientas para ahorrar tiempo en tu negocio." />
+    <link rel="preconnect" href="https://images.unsplash.com" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -18,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
         rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -27,565 +33,118 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Navegación principal">
             <a href="#inicio" class="logo">
                 <span class="logo-icon">P</span>
                 <span>Peter Avilés</span>
             </a>
 
-            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+            <button class="menu-btn" id="menuBtn" type="button" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#soluciones">Soluciones</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#paquetes">Paquetes</a></li>
-                <li><a href="#proyectos">Casos</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#contacto" class="nav-cta">Cotizar proyecto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="contenido">
 
-        <!-- HERO -->
         <section class="hero" id="inicio">
             <div class="hero-bg"></div>
 
             <div class="container hero-grid">
-                <div class="hero-content reveal">
+                <div class="hero-content">
                     <span class="badge">
                         <i class="fa-solid fa-circle-check"></i>
-                        Soluciones digitales para negocios, emprendedores y PYMES
+                        Desarrollo web para negocios y PYMES
                     </span>
 
-                    <h1>
-                        Páginas web y sistemas para que tu negocio
-                        <span>venda más y trabaje mejor.</span>
-                    </h1>
+                    <h1>Páginas web y sistemas para
+                        <span>hacer crecer tu negocio.</span></h1>
 
-                    <p>
-                        Ayudo a pequeñas y medianas empresas a digitalizar procesos, organizar ventas,
-                        controlar inventarios, recibir clientes por internet y tomar mejores decisiones
-                        con soluciones web claras, funcionales y preparadas para crecer.
-                    </p>
+                    <p>Creo webs para captar clientes y sistemas para organizar ventas, inventarios y procesos. Soluciones a medida, con trato directo y soporte técnico.</p>
 
                     <div class="hero-actions">
                         <a href="https://wa.me/593963892976?text=Hola%20Peter%2C%20quiero%20cotizar%20una%20soluci%C3%B3n%20web%20para%20mi%20negocio."
-                            target="_blank" class="btn btn-primary">
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                             Solicitar cotización
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
 
-                        <a href="#paquetes" class="btn btn-secondary">
-                            Ver paquetes
-                            <i class="fa-solid fa-box-open"></i>
+                        <a href="#proyectos" class="btn btn-secondary">
+                            Ver proyectos
+                            <i class="fa-solid fa-arrow-down"></i>
                         </a>
                     </div>
 
-                    <div class="hero-stats">
-                        <div>
-                            <strong>Web</strong>
-                            <span>Presencia digital para captar clientes</span>
-                        </div>
-                        <div>
-                            <strong>Gestión</strong>
-                            <span>Inventario, ventas, clientes y reportes</span>
-                        </div>
-                        <div>
-                            <strong>PYMES</strong>
-                            <span>Soluciones prácticas para negocios reales</span>
-                        </div>
-                    </div>
                 </div>
 
-                <div class="hero-card reveal">
+                <aside class="hero-card" aria-label="Presentación de Peter Avilés">
+                    <img class="hero-image" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=75"
+                        srcset="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&amp;fit=crop&amp;w=480&amp;h=300&amp;q=75 480w, https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=75 960w"
+                        sizes="(max-width: 980px) calc(100vw - 40px), 448px" width="960" height="600"
+                        alt="Un espacio de trabajo con un portátil para dar forma a nuevas ideas" fetchpriority="high" decoding="async">
                     <div class="profile-card">
+                        <span class="eyebrow">Tu contacto técnico</span>
                         <div class="profile-top">
-                            <img src="https://scontent.fgye1-2.fna.fbcdn.net/v/t39.30808-6/649276017_2799733670359045_6946840891163266755_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Iqs8e35vxMEQ7kNvwHyqM0Z&_nc_oc=Adr846NgAR1cTEdDtoL6xrj9w_09SlL7ibu42OF_4TDQ5htCzAnTCSIjjJ6kSghs24o&_nc_zt=23&_nc_ht=scontent.fgye1-2.fna&_nc_gid=KLp-e872GMbJ9ZeEFdVxHg&_nc_ss=7b2a8&oh=00_Af0ZJzXZ0cR401FE7aFsnnRlQfLPravdaz6vX2ASvBT1dw&oe=69F57A44"
-                                alt="Foto de Peter Avilés" />
-                            <div>
-                                <h3>Peter Avilés</h3>
-                                <p>Desarrollador de soluciones web para empresas</p>
-                            </div>
+                            <span class="profile-avatar" aria-hidden="true">PA</span>
+                            <div><h2>Peter Avilés</h2><p>Desarrollador web · Guayaquil, Ecuador</p></div>
                         </div>
-
-                        <div class="business-card">
-                            <h4>¿Qué puedo resolver?</h4>
-
-                            <ul>
-                                <li><i class="fa-solid fa-check"></i> Crear una web profesional para tu negocio.</li>
-                                <li><i class="fa-solid fa-check"></i> Digitalizar ventas, inventario y clientes.</li>
-                                <li><i class="fa-solid fa-check"></i> Automatizar tareas repetitivas.</li>
-                                <li><i class="fa-solid fa-check"></i> Crear paneles administrativos y reportes.</li>
-                            </ul>
-                        </div>
-
-                        <div class="profile-links">
-                            <a href="https://wa.me/593963892976?text=Hola%20Peter%2C%20quiero%20hablar%20sobre%20un%20proyecto%20para%20mi%20empresa."
-                                target="_blank">
-                                <i class="fa-brands fa-whatsapp"></i>
-                                Hablar por WhatsApp
-                            </a>
-
-                            <a href="mailto:avilespiter35@gmail.com?subject=Cotización%20de%20proyecto%20web">
-                                <i class="fa-solid fa-envelope"></i>
-                                Enviar correo
-                            </a>
-                        </div>
+                        <p class="profile-summary">Del primer análisis a la publicación: una solución adaptada a lo que necesita tu negocio.</p>
+                        <a href="#contacto" class="btn btn-secondary">Hablemos de tu idea <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
-                </div>
+                </aside>
             </div>
         </section>
 
-        <!-- PROBLEMAS QUE RESUELVO -->
-        <section class="section" id="soluciones">
+        <section class="section soft" id="servicios">
             <div class="container">
-                <div class="section-heading center reveal">
-                    <span class="eyebrow">Soluciones para negocios</span>
-                    <h2>Problemas comunes que puedo ayudarte a resolver</h2>
-                    <p>
-                        Una empresa no necesita solamente código. Necesita vender, organizarse,
-                        atender mejor y ahorrar tiempo. Por eso cada solución se plantea desde
-                        el problema del negocio.
-                    </p>
-                </div>
-
-                <div class="pain-grid">
-                    <article class="pain-card reveal">
-                        <i class="fa-solid fa-globe"></i>
-                        <h3>No tienes presencia digital profesional</h3>
-                        <p>
-                            Diseño una web clara, rápida y adaptable para mostrar tus servicios,
-                            ubicación, contacto, WhatsApp y propuesta comercial.
-                        </p>
-                    </article>
-
-                    <article class="pain-card reveal">
-                        <i class="fa-solid fa-boxes-stacked"></i>
-                        <h3>Controlas inventario o ventas en Excel</h3>
-                        <p>
-                            Desarrollo sistemas para registrar productos, movimientos, clientes,
-                            ventas, reportes y usuarios con mayor orden y seguridad.
-                        </p>
-                    </article>
-
-                    <article class="pain-card reveal">
-                        <i class="fa-solid fa-clock"></i>
-                        <h3>Pierdes tiempo en tareas repetitivas</h3>
-                        <p>
-                            Automatizo procesos como registros, reportes, búsquedas, formularios,
-                            consultas y paneles internos para reducir trabajo manual.
-                        </p>
-                    </article>
-
-                    <article class="pain-card reveal">
-                        <i class="fa-solid fa-chart-line"></i>
-                        <h3>No tienes datos claros para decidir</h3>
-                        <p>
-                            Creo paneles, reportes y visualizaciones para entender ventas,
-                            productos, clientes, rendimiento y oportunidades de mejora.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- SOBRE MI -->
-        <section class="section soft" id="sobre-mi">
-            <div class="container about-grid">
-                <div class="section-heading reveal">
-                    <span class="eyebrow">Sobre mí</span>
-                    <h2>Perfil técnico con enfoque comercial</h2>
-                </div>
-
-                <div class="about-content reveal">
-                    <p>
-                        Soy Peter Avilés, desarrollador web orientado a construir soluciones
-                        útiles para empresas, emprendimientos y negocios que necesitan mejorar
-                        su presencia digital, ordenar procesos internos o crear sistemas a medida.
-                    </p>
-
-                    <p>
-                        Mi enfoque no es vender tecnología por vender tecnología. Primero analizo
-                        qué problema tiene el negocio, qué proceso necesita mejorar y qué solución
-                        puede generar más valor: una página web, un sistema administrativo,
-                        una base de datos, un panel de control o una automatización.
-                    </p>
-
-                    <p>
-                        Trabajo con tecnologías como Python, JavaScript, Node.js, HTML, CSS,
-                        MySQL, PostgreSQL, Docker, Linux y VPS, pero las presento como medios
-                        para entregar resultados: orden, ahorro de tiempo, control y crecimiento.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICIOS -->
-        <section class="section" id="servicios">
-            <div class="container">
-                <div class="section-heading center reveal">
+                <div class="section-heading center">
                     <span class="eyebrow">Servicios</span>
-                    <h2>Servicios pensados para pequeñas y medianas empresas</h2>
-                    <p>
-                        Servicios organizados según necesidades reales de negocio, no solamente
-                        por tecnologías.
-                    </p>
+                    <h2>Lo esencial para digitalizar tu negocio</h2>
+                    <p>Elegimos la solución según tu objetivo y el alcance de tu proyecto.</p>
                 </div>
-
                 <div class="services-grid">
-                    <article class="service-card reveal">
-                        <i class="fa-solid fa-store"></i>
-                        <h3>Página web empresarial</h3>
-                        <p>
-                            Web profesional para presentar servicios, captar clientes, mostrar
-                            ubicación, integrar WhatsApp y mejorar la imagen del negocio.
-                        </p>
+                    <article class="service-card">
+                        <img class="service-image" srcset="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=480&amp;h=300&amp;q=75 480w, https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=75 960w" sizes="(max-width: 620px) calc(100vw - 28px), (max-width: 980px) calc((100vw - 62px) / 2), 379px" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=75" width="640" height="400" loading="lazy" decoding="async" alt="Portátil mostrando información de un negocio en internet">
+                        <div class="service-body">
+                        <h3>Páginas web</h3><p>Muestra lo que ofreces y ayuda a nuevos clientes a encontrarte y escribirte, desde su celular o computadora.</p>
+                        <a class="service-cta" href="https://wa.me/593963892976?text=Hola%20Peter%2C%20quiero%20una%20p%C3%A1gina%20web%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer">Consultar este servicio <span aria-hidden="true">&rarr;</span></a>
+                        </div>
                     </article>
-
-                    <article class="service-card reveal">
-                        <i class="fa-solid fa-cash-register"></i>
-                        <h3>Sistema de ventas e inventario</h3>
-                        <p>
-                            Registro de productos, stock, clientes, ventas, movimientos,
-                            reportes y usuarios para negocios que quieren dejar de depender de hojas sueltas.
-                        </p>
+                    <article class="service-card">
+                        <img class="service-image" srcset="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&amp;fit=crop&amp;w=480&amp;h=300&amp;q=75 480w, https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=75 960w" sizes="(max-width: 620px) calc(100vw - 28px), (max-width: 980px) calc((100vw - 62px) / 2), 379px" src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=75" width="640" height="400" loading="lazy" decoding="async" alt="Productos organizados en las estanterías de un almacén">
+                        <div class="service-body">
+                        <h3>Control de tu negocio</h3><p>Ten tus productos, ventas y clientes en un solo lugar. Consulta qué tienes disponible y cómo va tu negocio.</p>
+                        <a class="service-cta" href="https://wa.me/593963892976?text=Hola%20Peter%2C%20quiero%20organizar%20las%20ventas%20e%20inventario%20de%20mi%20negocio." target="_blank" rel="noopener noreferrer">Consultar este servicio <span aria-hidden="true">&rarr;</span></a>
+                        </div>
                     </article>
-
-                    <article class="service-card reveal">
-                        <i class="fa-solid fa-user-gear"></i>
-                        <h3>Panel administrativo</h3>
-                        <p>
-                            Panel privado para gestionar información del negocio: usuarios,
-                            formularios, productos, pedidos, clientes, reportes y configuraciones.
-                        </p>
-                    </article>
-
-                    <article class="service-card reveal">
-                        <i class="fa-solid fa-gears"></i>
-                        <h3>Automatización de procesos</h3>
-                        <p>
-                            Digitalización de tareas repetitivas para reducir errores,
-                            ahorrar tiempo y mejorar la operación diaria.
-                        </p>
-                    </article>
-
-                    <article class="service-card reveal">
-                        <i class="fa-solid fa-database"></i>
-                        <h3>Bases de datos y reportes</h3>
-                        <p>
-                            Organización de información, consultas SQL, reportes,
-                            tableros básicos y estructuras preparadas para crecer.
-                        </p>
-                    </article>
-
-                    <article class="service-card reveal">
-                        <i class="fa-solid fa-cloud-arrow-up"></i>
-                        <h3>Publicación y soporte</h3>
-                        <p>
-                            Despliegue de páginas o sistemas en hosting, VPS o servidores,
-                            con configuración inicial y acompañamiento técnico.
-                        </p>
+                    <article class="service-card">
+                        <img class="service-image" srcset="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&amp;fit=crop&amp;w=480&amp;h=300&amp;q=75 480w, https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=75 960w" sizes="(max-width: 620px) calc(100vw - 28px), (max-width: 980px) calc((100vw - 62px) / 2), 379px" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=75" width="640" height="400" loading="lazy" decoding="async" alt="Un equipo colaborando para organizar su trabajo">
+                        <div class="service-body">
+                        <h3>Menos tareas repetitivas</h3><p>Ahorra tiempo al organizar registros, consultas y reportes con herramientas hechas para tu forma de trabajar.</p>
+                        <a class="service-cta" href="https://wa.me/593963892976?text=Hola%20Peter%2C%20quiero%20ahorrar%20tiempo%20en%20las%20tareas%20de%20mi%20negocio." target="_blank" rel="noopener noreferrer">Consultar este servicio <span aria-hidden="true">&rarr;</span></a>
+                        </div>
                     </article>
                 </div>
+                <p class="service-note">Publicación y soporte técnico según el alcance acordado.</p>
             </div>
         </section>
 
-        <!-- PAQUETES -->
-        <section class="section soft" id="paquetes">
-            <div class="container">
-                <div class="section-heading center reveal">
-                    <span class="eyebrow">Paquetes</span>
-                    <h2>Opciones claras según la etapa de tu negocio</h2>
-                    <p>
-                        Estos paquetes sirven como punto de partida. Cada proyecto puede ajustarse
-                        según el tamaño, presupuesto y necesidad real de la empresa.
-                    </p>
-                </div>
-
-                <div class="packages-grid">
-                    <article class="package-card reveal">
-                        <span class="package-label">Para empezar</span>
-                        <h3>Presencia Digital</h3>
-                        <p>
-                            Ideal para negocios que necesitan verse profesionales y recibir clientes
-                            desde internet.
-                        </p>
-
-                        <ul>
-                            <li><i class="fa-solid fa-check"></i> Página web informativa.</li>
-                            <li><i class="fa-solid fa-check"></i> Diseño responsive.</li>
-                            <li><i class="fa-solid fa-check"></i> Secciones de servicios, contacto y ubicación.</li>
-                            <li><i class="fa-solid fa-check"></i> Botón directo a WhatsApp.</li>
-                            <li><i class="fa-solid fa-check"></i> Optimización básica de carga.</li>
-                        </ul>
-
-                        <a href="https://wa.me/593963892976?text=Hola%20Peter%2C%20me%20interesa%20el%20paquete%20Presencia%20Digital."
-                            target="_blank" class="btn btn-secondary">
-                            Consultar este paquete
-                        </a>
-                    </article>
-
-                    <article class="package-card featured reveal">
-                        <span class="package-label">Más recomendado</span>
-                        <h3>Gestión Comercial</h3>
-                        <p>
-                            Para empresas que quieren controlar productos, ventas, clientes
-                            y reportes desde un sistema propio.
-                        </p>
-
-                        <ul>
-                            <li><i class="fa-solid fa-check"></i> Login y panel administrativo.</li>
-                            <li><i class="fa-solid fa-check"></i> Módulo de productos o servicios.</li>
-                            <li><i class="fa-solid fa-check"></i> Registro de clientes y ventas.</li>
-                            <li><i class="fa-solid fa-check"></i> Control de inventario básico.</li>
-                            <li><i class="fa-solid fa-check"></i> Reportes para tomar decisiones.</li>
-                        </ul>
-
-                        <a href="https://wa.me/593963892976?text=Hola%20Peter%2C%20me%20interesa%20el%20paquete%20Gesti%C3%B3n%20Comercial."
-                            target="_blank" class="btn btn-primary">
-                            Cotizar sistema
-                        </a>
-                    </article>
-
-                    <article class="package-card reveal">
-                        <span class="package-label">A medida</span>
-                        <h3>Sistema Personalizado</h3>
-                        <p>
-                            Para negocios con procesos propios que necesitan una solución
-                            hecha según su operación.
-                        </p>
-
-                        <ul>
-                            <li><i class="fa-solid fa-check"></i> Análisis del proceso actual.</li>
-                            <li><i class="fa-solid fa-check"></i> Diseño de módulos personalizados.</li>
-                            <li><i class="fa-solid fa-check"></i> Base de datos estructurada.</li>
-                            <li><i class="fa-solid fa-check"></i> Roles, permisos y validaciones.</li>
-                            <li><i class="fa-solid fa-check"></i> Despliegue y acompañamiento inicial.</li>
-                        </ul>
-
-                        <a href="https://wa.me/593963892976?text=Hola%20Peter%2C%20necesito%20un%20sistema%20personalizado%20para%20mi%20empresa."
-                            target="_blank" class="btn btn-secondary">
-                            Solicitar diagnóstico
-                        </a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROCESO -->
-        <section class="section" id="proceso">
-            <div class="container">
-                <div class="section-heading center reveal">
-                    <span class="eyebrow">Método de trabajo</span>
-                    <h2>Proceso simple para convertir una idea en una solución funcional</h2>
-                </div>
-
-                <div class="process-grid">
-                    <article class="process-card reveal">
-                        <span>01</span>
-                        <h3>Diagnóstico</h3>
-                        <p>
-                            Revisamos el problema, el objetivo del negocio, los procesos actuales
-                            y lo que realmente necesita la empresa.
-                        </p>
-                    </article>
-
-                    <article class="process-card reveal">
-                        <span>02</span>
-                        <h3>Propuesta</h3>
-                        <p>
-                            Defino alcance, módulos, tiempos, funcionalidades principales
-                            y estructura general de la solución.
-                        </p>
-                    </article>
-
-                    <article class="process-card reveal">
-                        <span>03</span>
-                        <h3>Desarrollo</h3>
-                        <p>
-                            Construyo la web, sistema, panel, base de datos o automatización
-                            con revisiones durante el proceso.
-                        </p>
-                    </article>
-
-                    <article class="process-card reveal">
-                        <span>04</span>
-                        <h3>Entrega y soporte</h3>
-                        <p>
-                            Publico el proyecto, explico su uso y dejo la base lista para mejoras
-                            futuras o mantenimiento.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- HABILIDADES -->
-        <section class="section soft" id="habilidades">
-            <div class="container">
-                <div class="section-heading center reveal">
-                    <span class="eyebrow">Stack técnico</span>
-                    <h2>Tecnologías que respaldan las soluciones</h2>
-                    <p>
-                        Estas herramientas permiten crear soluciones seguras, mantenibles,
-                        escalables y adaptadas al crecimiento del negocio.
-                    </p>
-                </div>
-
-                <div class="skills-grid">
-                    <div class="skill-card reveal">
-                        <h3><i class="fa-solid fa-laptop-code"></i> Desarrollo</h3>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>JavaScript</span>
-                            <span>Java</span>
-                            <span>C#</span>
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card reveal">
-                        <h3><i class="fa-solid fa-layer-group"></i> Backend y sistemas</h3>
-                        <div class="tags">
-                            <span>Node.js</span>
-                            <span>Express</span>
-                            <span>Flask</span>
-                            <span>Django</span>
-                            <span>.NET</span>
-                            <span>APIs REST</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card reveal">
-                        <h3><i class="fa-solid fa-database"></i> Datos</h3>
-                        <div class="tags">
-                            <span>MySQL</span>
-                            <span>PostgreSQL</span>
-                            <span>SQLite</span>
-                            <span>MongoDB</span>
-                            <span>SQL Server</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card reveal">
-                        <h3><i class="fa-solid fa-screwdriver-wrench"></i> Publicación</h3>
-                        <div class="tags">
-                            <span>Git</span>
-                            <span>GitHub</span>
-                            <span>Docker</span>
-                            <span>Linux</span>
-                            <span>VPS</span>
-                            <span>Hosting</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROYECTOS -->
         <section class="section" id="proyectos">
             <div class="container">
-                <div class="section-heading center reveal">
-                    <span class="eyebrow">Casos y proyectos</span>
-                    <h2>Ejemplos de soluciones aplicables a empresas</h2>
-                    <p>
-                        Más que mostrar tecnologías, cada proyecto representa un tipo de problema
-                        que puede resolver una empresa: ventas, inventario, presencia digital,
-                        gestión o análisis.
-                    </p>
-                </div>
-
-                <div class="filter-buttons reveal">
-                    <button class="filter-btn active" data-filter="all">Todos</button>
-                    <button class="filter-btn" data-filter="web">Web empresarial</button>
-                    <button class="filter-btn" data-filter="backend">Sistemas</button>
-                    <button class="filter-btn" data-filter="desktop">Inventario</button>
-                    <button class="filter-btn" data-filter="data">Datos</button>
-                </div>
-
-                <div class="projects-grid">
-
-                    <!-- PROYECTO 1 -->
-                    <article class="project-card reveal" data-category="web backend">
-                        <div class="project-carousel" data-carousel>
-                            <div class="carousel-track">
-                                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Venta de tickets online">
-                                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Evento y control de entradas">
-                                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Pagos digitales y gestión online">
-                            </div>
-
-                            <button class="carousel-btn prev" type="button" aria-label="Imagen anterior">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="carousel-btn next" type="button" aria-label="Imagen siguiente">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
-
-                        <div class="project-body">
-                            <div class="project-header">
-                                <h3>Sistema de Ticketing QR</h3>
-                                <span class="project-type">Ventas online</span>
-                            </div>
-
-                            <p>
-                                Plataforma para gestionar eventos, entradas, pagos y validación mediante códigos QR.
-                                Este tipo de solución puede adaptarse para reservas, accesos, órdenes o control de
-                                asistencia.
-                            </p>
-
-                            <div class="project-tags">
-                                <span>Pagos</span>
-                                <span>QR</span>
-                                <span>Panel web</span>
-                                <span>Gestión</span>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="https://pagqr-production.up.railway.app/" target="_blank">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    Ver demo
-                                </a>
-
-                                <a href="https://wa.me/593963892976?text=Hola%20Peter%2C%20quiero%20un%20sistema%20similar%20al%20de%20ticketing%20QR."
-                                    target="_blank">
-                                    <i class="fa-solid fa-paper-plane"></i>
-                                    Cotizar similar
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- PROYECTO 2 -->
-                    <article class="project-card project-card-gfc reveal" data-category="web">
-                        <div class="project-carousel" data-carousel>
-                            <div class="carousel-track">
-                                <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Consultoría corporativa internacional">
-                                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Reunión empresarial y estrategia">
-                                <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Equipo de negocios y análisis financiero">
-                            </div>
-
-                            <button class="carousel-btn prev" type="button" aria-label="Imagen anterior">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="carousel-btn next" type="button" aria-label="Imagen siguiente">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
+                <div class="section-heading center"><span class="eyebrow">Trabajo seleccionado</span><h2>Ideas que se convierten en páginas web</h2><p>Cada negocio tiene algo diferente que ofrecer. Así lo ayudo a presentarse en internet.</p></div>
+                <p class="project-image-note">Las fotografías representan el sector de cada proyecto.</p>
+                <div class="projects-grid"><article class="project-card">
+                        <img class="project-image" srcset="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=480&amp;h=300&amp;q=75 480w, https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=75 960w" sizes="(max-width: 620px) calc(100vw - 28px), (max-width: 980px) calc((100vw - 62px) / 2), 379px" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=75" width="960" height="600" loading="lazy" decoding="async" alt="Imagen representativa de consultoría: un espacio de reuniones empresariales">
 
                         <div class="project-body">
                             <div class="project-header">
@@ -594,240 +153,77 @@
                             </div>
 
                             <p>
-                                Página web corporativa bilingüe para presentar servicios profesionales,
-                                generar confianza, comunicar experiencia y facilitar el contacto con clientes.
+                                Una página para dar a conocer sus servicios de consultoría en dos idiomas.
+                                Sus visitantes pueden conocer la empresa, entender qué ofrece y encontrar cómo contactarla.
                             </p>
 
-                            <div class="project-tags">
-                                <span>Web empresarial</span>
-                                <span>Responsive</span>
-                                <span>Servicios</span>
-                                <span>Contacto</span>
-                            </div>
-
                             <div class="project-links">
-                                <a href="https://gfc-at.com/en/" target="_blank">
+                                <a class="project-visit" aria-label="Ver sitio de Global Finance Consulting (abre en otra pestaña)" href="https://gfc-at.com/en/" target="_blank" rel="noopener noreferrer">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                     Ver sitio
                                 </a>
-
-                                <a href="https://wa.me/593963892976?text=Hola%20Peter%2C%20quiero%20una%20web%20corporativa%20para%20mi%20empresa."
-                                    target="_blank">
-                                    <i class="fa-solid fa-paper-plane"></i>
-                                    Cotizar web
-                                </a>
                             </div>
                         </div>
                     </article>
-
-                    <!-- PROYECTO 3 -->
-                    <article class="project-card reveal" data-category="desktop backend">
-                        <div class="project-carousel" data-carousel>
-                            <div class="carousel-track">
-                                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Gestión de inventario y almacén">
-                                <img src="https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Control de productos en negocio">
-                                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Logística y organización de stock">
-                            </div>
-
-                            <button class="carousel-btn prev" type="button" aria-label="Imagen anterior">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="carousel-btn next" type="button" aria-label="Imagen siguiente">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
+<article class="project-card">
+                        <img class="project-image" srcset="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=480&amp;h=300&amp;q=75 480w, https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=75 960w" sizes="(max-width: 620px) calc(100vw - 28px), (max-width: 980px) calc((100vw - 62px) / 2), 379px" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=75" width="960" height="600" loading="lazy" decoding="async" alt="Imagen representativa de comunicaciones: equipos de conexión y servidores">
 
                         <div class="project-body">
                             <div class="project-header">
-                                <h3>Sistema de Inventario</h3>
-                                <span class="project-type">Gestión interna</span>
+                                <h3>Uninet Comunicaciones</h3>
+                                <span class="project-type">Web empresarial</span>
                             </div>
 
                             <p>
-                                Aplicación para controlar productos, ventas, stock y reportes básicos.
-                                Ideal para negocios que necesitan ordenar información y reducir errores manuales.
+                                Una página que presenta la empresa y sus servicios de comunicaciones
+                                de forma ordenada. Pensada para que los visitantes conozcan su oferta y encuentren la información que buscan.
                             </p>
 
-                            <div class="project-tags">
-                                <span>Inventario</span>
-                                <span>Ventas</span>
-                                <span>Stock</span>
-                                <span>Reportes</span>
-                            </div>
-
                             <div class="project-links">
-                                <a href="https://github.com/Peteravi" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                    Ver perfil
-                                </a>
-
-                                <a href="https://wa.me/593963892976?text=Hola%20Peter%2C%20necesito%20un%20sistema%20de%20inventario%20para%20mi%20negocio."
-                                    target="_blank">
-                                    <i class="fa-solid fa-paper-plane"></i>
-                                    Cotizar inventario
+                                <a class="project-visit" aria-label="Ver sitio de Uninet Comunicaciones (abre en otra pestaña)" href="https://uninetcomunicaciones.online/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    Ver sitio
                                 </a>
                             </div>
                         </div>
                     </article>
-
-                    <!-- PROYECTO 4 -->
-                    <article class="project-card reveal" data-category="data backend">
-                        <div class="project-carousel" data-carousel>
-                            <div class="carousel-track">
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Dashboard de análisis de ventas">
-                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Análisis de datos empresariales">
-                                <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=1200&q=80"
-                                    alt="Gráficos y métricas de negocio">
-                            </div>
-
-                            <button class="carousel-btn prev" type="button" aria-label="Imagen anterior">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                            <button class="carousel-btn next" type="button" aria-label="Imagen siguiente">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
+<article class="project-card">
+                        <img class="project-image" srcset="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=480&amp;h=300&amp;q=75 480w, https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=75 960w" sizes="(max-width: 620px) calc(100vw - 28px), (max-width: 980px) calc((100vw - 62px) / 2), 379px" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=960&amp;h=600&amp;q=75" width="960" height="600" loading="lazy" decoding="async" alt="Imagen representativa del sector automotriz: un automóvil deportivo">
 
                         <div class="project-body">
                             <div class="project-header">
-                                <h3>Predicción y análisis de ventas</h3>
-                                <span class="project-type">Datos</span>
+                                <h3>Borcelle Auto Group LLC</h3>
+                                <span class="project-type">Web automotriz</span>
                             </div>
 
                             <p>
-                                Proyecto de análisis de ventas usando Python, procesamiento de datos
-                                y visualización para apoyar decisiones comerciales con información clara.
+                                Una página para presentar una empresa del mundo automotriz.
+                                Reúne la información del negocio con una imagen visual acorde a su marca, para que sus clientes puedan conocerlo por internet.
                             </p>
-
-                            <div class="project-tags">
-                                <span>Datos</span>
-                                <span>Reportes</span>
-                                <span>Ventas</span>
-                                <span>Decisiones</span>
-                            </div>
 
                             <div class="project-links">
-                                <a href="https://github.com/Peteravi" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                    Ver perfil
-                                </a>
-
-                                <a href="https://wa.me/593963892976?text=Hola%20Peter%2C%20quiero%20analizar%20ventas%20o%20crear%20reportes%20para%20mi%20negocio."
-                                    target="_blank">
-                                    <i class="fa-solid fa-paper-plane"></i>
-                                    Cotizar reportes
+                                <a class="project-visit" aria-label="Ver sitio de Borcelle Auto Group (abre en otra pestaña)" href="https://borcelleautoutah.com/index.html" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    Ver sitio
                                 </a>
                             </div>
                         </div>
-                    </article>
-
-                </div>
+                    </article></div>
             </div>
         </section>
 
-        <!-- EXPERIENCIA -->
-        <section class="section soft" id="experiencia">
+        <section class="section soft" id="sobre-mi">
+            <div class="container about-grid">
+                <div class="section-heading"><span class="eyebrow">Sobre mí</span><h2>Tecnología con enfoque práctico</h2></div>
+                <div class="about-content">
+                    <p>Soy Peter Avilés. Desarrollo páginas web y sistemas a medida para empresas y emprendimientos, con atención directa durante todo el proyecto.</p>
+                    <p>Mi experiencia combina desarrollo independiente y académico con soporte técnico en el Consejo Nacional Electoral. Mi formación en Sistemas de Información en la Universidad de Guayaquil me permite analizar procesos y diseñar soluciones para cada negocio.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contacto">
             <div class="container">
-                <div class="section-heading center reveal">
-                    <span class="eyebrow">Experiencia</span>
-                    <h2>Experiencia aplicada a soluciones para empresas</h2>
-                    <p>
-                        Mi trayectoria combina soporte técnico, desarrollo de sistemas,
-                        bases de datos y atención a necesidades reales de usuarios.
-                    </p>
-                </div>
-
-                <div class="timeline">
-                    <div class="timeline-item reveal">
-                        <span class="timeline-dot"></span>
-                        <div class="timeline-content">
-                            <h3>Soporte Técnico</h3>
-                            <h4>Consejo Nacional Electoral - CNE</h4>
-                            <p>
-                                Experiencia atendiendo usuarios reales, resolviendo incidencias,
-                                configurando software, revisando equipos, apoyando redes básicas
-                                y dando soporte a entornos operativos donde la continuidad del servicio es importante.
-                            </p>
-                            <div class="experience-value">
-                                <span><i class="fa-solid fa-briefcase"></i> Valor para empresas:</span>
-                                <p>
-                                    Capacidad para entender problemas prácticos, comunicarse con usuarios
-                                    y proponer soluciones funcionales, no solamente técnicas.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item reveal">
-                        <span class="timeline-dot"></span>
-                        <div class="timeline-content">
-                            <h3>Desarrollo de soluciones web y sistemas</h3>
-                            <h4>Proyectos independientes y académicos</h4>
-                            <p>
-                                Creación de páginas web, sistemas administrativos, módulos de inventario,
-                                bases de datos, APIs, reportes y aplicaciones orientadas a gestión de información.
-                            </p>
-                            <div class="experience-value">
-                                <span><i class="fa-solid fa-building"></i> Valor para empresas:</span>
-                                <p>
-                                    Desarrollo de herramientas que ayudan a ordenar procesos,
-                                    controlar información y mejorar la operación diaria del negocio.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item reveal">
-                        <span class="timeline-dot"></span>
-                        <div class="timeline-content">
-                            <h3>Ingeniería en Sistemas de Información</h3>
-                            <h4>Universidad de Guayaquil</h4>
-                            <p>
-                                Formación enfocada en programación, bases de datos, análisis de sistemas,
-                                arquitectura de software, diseño de soluciones y gestión de información.
-                            </p>
-                            <div class="experience-value">
-                                <span><i class="fa-solid fa-graduation-cap"></i> Valor para empresas:</span>
-                                <p>
-                                    Base técnica para analizar requerimientos, diseñar soluciones mantenibles
-                                    y adaptar el software a necesidades reales del cliente.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="cta-section">
-            <div class="container cta-box reveal">
-                <div>
-                    <span class="eyebrow">Trabajemos juntos</span>
-                    <h2>¿Tu negocio necesita una web, sistema o automatización?</h2>
-                    <p>
-                        Cuéntame qué proceso quieres mejorar y te ayudo a definir una solución clara:
-                        página web, sistema de inventario, panel administrativo, reportes o desarrollo a medida.
-                    </p>
-                </div>
-
-                <a href="https://wa.me/593963892976?text=Hola%20Peter%2C%20quiero%20una%20cotizaci%C3%B3n%20para%20mi%20negocio."
-                    target="_blank" class="btn btn-primary">
-                    Pedir cotización
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-            </div>
-        </section>
-
-        <!-- CONTACTO -->
-        <section class="section soft" id="contacto">
-            <div class="container">
-                <div class="section-heading center reveal">
+                <div class="section-heading center">
                     <span class="eyebrow">Contacto</span>
                     <h2>Hablemos de tu proyecto</h2>
                     <p>
@@ -837,32 +233,19 @@
                 </div>
 
                 <div class="contact-grid">
-                    <a class="contact-card reveal"
+                    <a class="contact-card"
                         href="https://wa.me/593963892976?text=Hola%20Peter%2C%20quiero%20hablar%20sobre%20una%20soluci%C3%B3n%20digital%20para%20mi%20empresa."
-                        target="_blank">
+                        target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-whatsapp"></i>
                         <h3>WhatsApp</h3>
                         <p>Solicitar cotización rápida</p>
                     </a>
 
-                    <a class="contact-card reveal"
+                    <a class="contact-card"
                         href="mailto:avilespiter35@gmail.com?subject=Cotización%20de%20proyecto%20web">
                         <i class="fa-solid fa-envelope"></i>
                         <h3>Correo</h3>
                         <p>avilespiter35@gmail.com</p>
-                    </a>
-
-                    <a class="contact-card reveal" href="tel:+593963892976">
-                        <i class="fa-solid fa-phone"></i>
-                        <h3>Teléfono</h3>
-                        <p>+593 963 892 976</p>
-                    </a>
-
-                    <a class="contact-card reveal" href="https://www.linkedin.com/in/peter-aviles-alarcon-9053a5252/"
-                        target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <h3>LinkedIn</h3>
-                        <p>Conectar profesionalmente</p>
                     </a>
                 </div>
             </div>
@@ -872,16 +255,16 @@
 
     <footer class="footer">
         <div class="container footer-content">
-            <p>© <span id="currentYear"></span> Peter Avilés. Soluciones web y sistemas para empresas.</p>
+            <p>© <span id="currentYear">2026</span> Peter Avilés. Soluciones web y sistemas para empresas.</p>
 
             <div class="footer-social">
-                <a href="https://github.com/Peteravi" target="_blank" aria-label="GitHub"><i
+                <a href="https://github.com/Peteravi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
                         class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/peter-aviles-alarcon-9053a5252/" target="_blank"
+                <a href="https://www.linkedin.com/in/peter-aviles-alarcon-9053a5252/" target="_blank" rel="noopener noreferrer"
                     aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="mailto:avilespiter35@gmail.com?subject=Cotización%20de%20proyecto%20web" aria-label="Correo"><i
                         class="fa-solid fa-envelope"></i></a>
-                <a href="https://wa.me/593963892976" target="_blank" aria-label="WhatsApp"><i
+                <a href="https://wa.me/593963892976" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
                         class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
@@ -895,7 +278,7 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
